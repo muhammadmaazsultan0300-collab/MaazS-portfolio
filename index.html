@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light") document.documentElement.setAttribute("data-theme", "light");
+      } catch (e) { }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Maaz Sultan — Software Developer &amp; AI Engineer</title>
+  <meta name="description"
+    content="Muhammad Maaz Sultan — Software Developer specializing in Web Development, Automation, and AI Engineering. I build modern software and intelligent AI-powered solutions." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-blue"></span>
+    <span class="orb orb-cyan"></span>
+    <span class="orb orb-violet"></span>
+  </div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap">
+      <a href="index.html" class="logo">Maaz<span>.</span>Sultan</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+              stroke-linecap="round" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M21 12.5A8.5 8.5 0 1 1 11.5 3a7 7 0 0 0 9.5 9.5Z" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <a href="contact.html" class="btn btn-ghost btn-sm">Contact Me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap">
+
+        <div class="hero-portrait">
+          <div class="portrait-ring" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <div class="portrait-photo">
+              <img src="./profile.png" alt="Muhammad Maaz Sultan" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <h1 class="eyebrow-name">Muhammad Maaz Sultan</h1>
+          <p class="hero-title">
+            <span>AI Engineering</span>
+            <span class="divider">|</span>
+            <span>AI Engineer</span>
+          </p>
+          <p class="hero-tagline">"I build modern software and intelligent AI-powered solutions."</p>
+          <p class="hero-desc">I design and build modern web applications, reliable software systems, and intelligent
+            automation — combining solid engineering fundamentals with a growing focus on machine learning and AI so the
+            things I build are practical, not just proof-of-concept.</p>
+          <div class="hero-actions">
+            <a href="work.html" class="btn btn-primary">View My Work</a>
+            <a href="contact.html" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ SKILLS / EXPERTISE ============ -->
+    <section class="section reveal" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Expertise</p>
+          <h2>What I work on</h2>
+          <p>A snapshot of the areas I spend most of my time building in.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Python Development</h3>
+            <p>Writing clean, maintainable Python for applications, scripts, and backend services.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M4 4h16v16H4z M4 9h16 M9 4v16" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Building responsive, fast, well-structured websites and web applications end to end.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M9 3v18M15 3v18M3 9h18M3 15h18" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Software Engineering</h3>
+            <p>Designing systems with structure and maintainability in mind, not just working code.</p>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-badge">In Progress</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>API Integration</h3>
+            <p>Connecting applications to third-party and internal APIs, cleanly and securely.</p>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-badge">In Progress</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <circle cx="12" cy="7" r="3" />
+                <path d="M5 21c0-4 3-6 7-6s7 2 7 6" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>AI &amp; Machine Learning</h3>
+            <p>Building and training models, and applying AI/LLM techniques to real problems.</p>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-badge">In Progress</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <ellipse cx="12" cy="5" rx="8" ry="3" />
+                <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5 M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Database Development</h3>
+            <p>Designing schemas and queries that keep data organized, fast, and reliable.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about reveal" id="about">
+      <div class="wrap">
+        <div class="about-mark" aria-hidden="true">01</div>
+        <div class="about-body">
+          <p class="section-kicker">About</p>
+          <h2 style="margin-bottom:22px;">A developer who likes solving real problems</h2>
+          <p>I'm an <strong>AI Engineering student</strong> and developer based in Lahore, Pakistan, currently studying
+            in the Department of Artificial Intelligence. I enjoy turning real-world problems into practical software —
+            the kind that's actually useful once it's shipped, not just impressive in a demo.</p>
+          <p>My work sits at the intersection of <strong>software engineering, web technologies, automation, machine
+              learning, and AI engineering</strong>. I'm still early in that journey, and I'm intentional about it —
+            building projects that stretch my skills across each of these areas rather than staying comfortable in just
+            one.</p>
+          <div class="about-focus">
+            <span class="focus-pill">Problem-first thinking</span>
+            <span class="focus-pill">Clean, readable code</span>
+            <span class="focus-pill">Practical AI applications</span>
+            <span class="focus-pill">Continuous learning</span>
+          </div>
+        </div>
+      </div>
+    .
+    <!-- ============ FEATURED WORK ============ -->
+    <section class="section reveal" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Featured Work</p>
+          <h2>A few things I've built</h2>
+          <p>A small selection of projects — the full list lives on the Work page.</p>
+        </div>
+
+        <div class="work-grid">
+
+          <article class="project-card"
+            data-full-desc="A task management application that assigns and tracks tasks for people across different departments and fields, with priority labels (Low/Medium/High), assignment tracking, and the ability to add or remove tasks through a simple interface."
+            data-tech="Python, Database, REST APIs">
+            <div class="project-thumb">
+              <img src="./task-manager.png" alt="Task Manager" class="thumb-img is-active">
+              <span class="thumb-tag">Software App</span>
+            </div>
+            <div class="project-body">
+              <h3>Task Manager</h3>
+              <p>Assigns and tracks tasks across people from different departments and fields.</p>
+              <div class="project-tech">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Database</span>
+                <span class="tech-chip">REST APIs</span>
+              </div>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card"
+            data-full-desc="A full website built for a restaurant, featuring a browsable menu, restaurant information, and a clean, ordering-focused layout designed to make it easy for visitors to explore dishes and place orders."
+            data-tech="HTML, CSS, JavaScript">
+            <div class="project-thumb">
+              <img src="./restaurant-1.png" alt="Restaurant Website" class="thumb-img is-active">
+              <img src="./restaurant-2.png" alt="Restaurant Website" class="thumb-img">
+              <span class="thumb-tag">Web Development</span>
+              <span class="thumb-count">2 photos</span>
+            </div>
+            <div class="project-body">
+              <h3>Restaurant Website</h3>
+              <p>A full website for a restaurant — menu, info, and a clean ordering-focused layout.</p>
+              <div class="project-tech">
+                <span class="tech-chip">HTML</span>
+                <span class="tech-chip">CSS</span>
+                <span class="tech-chip">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card"
+            data-full-desc="A website for a cafe that presents the menu, atmosphere, and location details in a warm, simple layout — built to reflect the cafe's cozy, welcoming feel while keeping navigation straightforward for visitors."
+            data-tech="HTML, CSS, JavaScript">
+            <div class="project-thumb">
+              <img src="./cafe-1.png" alt="Cafe Website" class="thumb-img is-active">
+              <img src="./cafe-2.png" alt="Cafe Website" class="thumb-img">
+              <img src="./cafe-3.png" alt="Cafe Website" class="thumb-img">
+              <span class="thumb-tag">Web Development</span>
+              <span class="thumb-count">3 photos</span>
+            </div>
+            <div class="project-body">
+              <h3>Cafe Website</h3>
+              <p>A website for a cafe — menu, atmosphere, and location details in a warm, simple layout.</p>
+              <div class="project-tech">
+                <span class="tech-chip">HTML</span>
+                <span class="tech-chip">CSS</span>
+                <span class="tech-chip">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="work-footer">
+          <a href="work.html" class="btn btn-ghost">View Full Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME / CV ============ -->
+    <section class="section reveal" id="resume">
+      <div class="wrap">
+        <div class="resume-panel">
+          <div class="resume-info">
+            <div class="resume-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                <path d="M14 3v6h6" stroke-linejoin="round" />
+                <path d="M9 13h6M9 17h6" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="resume-text">
+              <h3>My CV / Resume</h3>
+              <p>View it online or download a copy — updated as my projects and skills grow.</p>
+            </div>
+          </div>
+          <div class="resume-actions">
+            <a href="cv.html" class="btn btn-ghost">View CV</a>
+            <a href="./Muhammad_Maaz_Sultan_CV.pdf" download class="btn btn-primary">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECHNOLOGIES ============ -->
+    <section class="section reveal" id="technologies">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Toolbox</p>
+          <h2>Technologies I work with</h2>
+          <p>Languages, frameworks, and tools I use regularly or am actively learning.</p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M9 18l-6-6 6-6M15 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>Python</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M9 18l-6-6 6-6M15 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>JavaScript</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 3l1.5 17L12 22l6.5-2L20 3H4z" stroke-linejoin="round" />
+            </svg>HTML</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 3l1.5 17L12 22l6.5-2L20 3H4z" stroke-linejoin="round" />
+            </svg>CSS</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M9 18l-6-6 6-6M15 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>C</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <ellipse cx="12" cy="5" rx="8" ry="3" />
+              <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5" stroke-linecap="round" />
+            </svg>SQL</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="12" r="2.4" />
+              <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke-linecap="round" />
+            </svg>Git / GitHub</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+                stroke-linecap="round" />
+            </svg>REST APIs</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>FastAPI</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="4" width="18" height="14" rx="2" />
+              <path d="M3 9h18M8 21h8" stroke-linecap="round" />
+            </svg>Streamlit</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="7" r="3" />
+              <path d="M5 21c0-4 3-6 7-6s7 2 7 6" stroke-linecap="round" />
+            </svg>Machine Learning</div>
+          <div class="tech-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z" stroke-linejoin="round" />
+            </svg>AI / LLM Technologies</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CURRENTLY LEARNING ============ -->
+    <section class="section reveal" id="learning">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Direction</p>
+          <h2>Currently learning</h2>
+          <p>Where I'm headed, one deliberate step at a time.</p>
+        </div>
+
+        <div class="learning-path">
+          <div class="learning-stage is-current">
+            <span class="dot"></span>
+            <span>Software Engineering</span>
+          </div>
+          <svg class="learning-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="learning-stage">
+            <span class="dot"></span>
+            <span>Advanced Automation</span>
+          </div>
+          <svg class="learning-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="learning-stage">
+            <span class="dot"></span>
+            <span>Machine Learning</span>
+          </div>
+          <svg class="learning-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="learning-stage">
+            <span class="dot"></span>
+            <span>AI Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLOSING CTA ============ -->
+    <section class="cta-band reveal">
+      <div class="wrap">
+        <div class="cta-inner">
+          <h2>Have a project in mind?</h2>
+          <p class="cta-sub">Let's build something useful.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary">Contact Me</a>
+            <a href="work.html" class="btn btn-ghost">View My Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ DETAILS LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <div class="lightbox-media">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18">
+            <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div id="lightboxMedia"></div>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image" style="display:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image" style="display:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <span class="lightbox-count" id="lightboxCount" style="display:none;"></span>
+      </div>
+      <div class="lightbox-info">
+        <span class="thumb-cat" id="lightboxCat">Category</span>
+        <h3 id="lightboxTitle">Project title</h3>
+        <p id="lightboxDesc">Project description.</p>
+        <div class="project-tech" id="lightboxTech" style="margin-top:12px; margin-bottom:4px; display:none;"></div>
+        <div class="project-links" style="margin-top:16px;">
+          <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank" rel="noopener noreferrer"><svg
+              width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+            </svg> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Maaz<span>.</span>Sultan</a>
+          <p>Software Developer focused on Web Development, Automation, and AI Engineering — building modern,
+            intelligent software.</p>
+        </div>
+
+        <div class="footer-nav">
+          <p class="footer-heading">Navigate</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <p class="footer-heading">Connect</p>
+          <div class="social-row">
+            <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-maaz-sultan/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z" />
+              </svg>
+            </a>
+            <a href="mailto:maazsultan1.00@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Muhammad Maaz Sultan. All rights reserved.</span>
+        <span>Built by Muhammad Maaz Sultan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

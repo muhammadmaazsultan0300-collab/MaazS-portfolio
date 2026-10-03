@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light") document.documentElement.setAttribute("data-theme", "light");
+      } catch (e) { }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Muhammad Maaz Sultan</title>
+  <meta name="description"
+    content="Projects by Muhammad Maaz Sultan — restaurant and cafe websites, a task manager, a weather dashboard, a hospital management system, and more." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-blue"></span>
+    <span class="orb orb-cyan"></span>
+    <span class="orb orb-violet"></span>
+  </div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap">
+      <a href="index.html" class="logo">Maaz<span>.</span>Sultan</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+              stroke-linecap="round" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M21 12.5A8.5 8.5 0 1 1 11.5 3a7 7 0 0 0 9.5 9.5Z" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <a href="contact.html" class="btn btn-ghost btn-sm">Contact Me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="section-kicker">Work</p>
+        <h1>Projects I've built</h1>
+        <p>Browse by category below. GitHub links point to my profile for now — individual repo links will be added
+          through the Admin Panel.</p>
+      </div>
+    </section>
+
+    <!-- ============ FILTER TABS + GRID ============ -->
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+
+        <div class="filter-tabs" id="filterTabs" role="tablist" aria-label="Work categories">
+          <button class="tab-btn is-active" data-filter="web" role="tab" aria-selected="true">Web Development</button>
+          <button class="tab-btn" data-filter="software" role="tab" aria-selected="false">Software Apps</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+
+          <!-- Web Development -->
+          <article class="portfolio-card" data-category="web"
+            data-full-desc="A full website built for a restaurant, featuring a browsable menu, restaurant information, and a clean, ordering-focused layout designed to make it easy for visitors to explore dishes and place orders."
+            data-tech="HTML, CSS, JavaScript">
+            <div class="portfolio-thumb">
+              <img src="./restaurant-1.png" alt="Restaurant Website" class="thumb-img is-active">
+              <img src="./restaurant-2.png" alt="Restaurant Website" class="thumb-img">
+              <span class="thumb-cat">Web Development</span>
+              <span class="thumb-count">2 photos</span>
+            </div>
+            <div class="portfolio-body">
+              <h3>Restaurant Website</h3>
+              <p>Menu, info, and a clean, ordering-focused layout.</p>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="web"
+            data-full-desc="A website for a cafe that presents the menu, atmosphere, and location details in a warm, simple layout — built to reflect the cafe's cozy, welcoming feel while keeping navigation straightforward for visitors."
+            data-tech="HTML, CSS, JavaScript">
+            <div class="portfolio-thumb">
+              <img src="./cafe-1.png" alt="Cafe Website" class="thumb-img is-active">
+              <img src="./cafe-2.png" alt="Cafe Website" class="thumb-img">
+              <img src="./cafe-3.png" alt="Cafe Website" class="thumb-img">
+              <span class="thumb-cat">Web Development</span>
+              <span class="thumb-count">3 photos</span>
+            </div>
+            <div class="portfolio-body">
+              <h3>Cafe Website</h3>
+              <p>Menu, atmosphere, and location details in a warm, simple layout.</p>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Software Apps -->
+          <article class="portfolio-card is-hidden" data-category="software"
+            data-full-desc="A task management application that assigns and tracks tasks for people across different departments and fields, with priority labels (Low/Medium/High), assignment tracking, and the ability to add or remove tasks through a simple interface."
+            data-tech="Python, Database, REST APIs">
+            <div class="portfolio-thumb">
+              <img src="./task-manager.png" alt="Task Manager" class="thumb-img is-active">
+              <span class="thumb-cat">Software Apps</span>
+            </div>
+            <div class="portfolio-body">
+              <h3>Task Manager</h3>
+              <p>Assigns and tracks tasks across departments and fields.</p>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card is-hidden" data-category="software"
+            data-full-desc="A dashboard that pulls live weather data and presents current conditions, a 5-day forecast, and alerts such as heat advisories — built with a clean, glanceable interface for checking the weather at a glance."
+            data-tech="Python, REST APIs">
+            <div class="portfolio-thumb">
+              <img src="./weather-dashboard.png" alt="Weather Dashboard" class="thumb-img is-active">
+              <span class="thumb-cat">Software Apps</span>
+            </div>
+            <div class="portfolio-body">
+              <h3>Weather Dashboard</h3>
+              <p>Live weather data with current conditions and forecasts.</p>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card is-hidden" data-category="software"
+            data-full-desc="A Hospital Management System built in C that manages hospital and patient records efficiently. Features include structured data storage, sorting, search by city, bed pricing calculations, and full record management — all through a straightforward, user-friendly menu system designed for organized healthcare data handling."
+            data-tech="C">
+            <div class="portfolio-thumb">
+              <div class="thumb-fill thumb-grad-coral">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="icon-accent3">
+                  <path d="M12 3v18M3 12h18" stroke-linecap="round" />
+                  <rect x="4" y="4" width="16" height="16" rx="3" />
+                </svg>
+              </div>
+              <span class="thumb-cat">Software Apps</span>
+            </div>
+            <div class="portfolio-body">
+              <h3>Hospital Management System</h3>
+              <p>Manages hospital and patient records with a user-friendly menu.</p>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CURRENTLY WORKING ON ============ -->
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">In Progress</p>
+          <h2>Currently working on</h2>
+          <p>Projects I'm actively building right now — not finished yet, but underway.</p>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <article class="portfolio-card is-visible in-progress-card"
+            data-full-desc="A voice-driven AI assistant that understands commands and helps handle everyday tasks — opening websites, playing music, and more. Currently under active development."
+            data-tech="Python, AI / LLM">
+            <div class="portfolio-thumb">
+              <img src="./jarvis-code-1.png" alt="Jarvis AI Assistant" class="thumb-img is-active">
+              <img src="./jarvis-code-2.png" alt="Jarvis AI Assistant" class="thumb-img">
+              <span class="thumb-cat in-progress-tag">In Progress</span>
+              <span class="thumb-count">2 photos</span>
+            </div>
+            <div class="portfolio-body">
+              <h3>Jarvis AI Assistant</h3>
+              <p>Understands voice commands and helps handle everyday tasks.</p>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card is-visible in-progress-card"
+            data-full-desc="A conversion-focused landing page for an e-commerce store, with clear product presentation and calls to action. Currently under active development."
+            data-tech="HTML, CSS, JavaScript">
+            <div class="portfolio-thumb">
+              <div class="thumb-fill thumb-grad-mix1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="icon-accent2">
+                  <circle cx="9" cy="20" r="1.4" />
+                  <circle cx="18" cy="20" r="1.4" />
+                  <path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="thumb-cat in-progress-tag">In Progress</span>
+            </div>
+            <div class="portfolio-body">
+              <h3>E-commerce Landing Page</h3>
+              <p>Conversion-focused layout with clear product presentation.</p>
+              <div class="project-links">
+                <button type="button" class="details-btn">Details</button>
+                <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank"
+                  rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                  </svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="form-note" style="margin-top:18px;">
+          Also leveling up right now: API Integration, AI &amp; Machine Learning, and Database Development.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ DETAILS LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <div class="lightbox-media">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18">
+            <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div id="lightboxMedia"></div>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image" style="display:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image" style="display:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <span class="lightbox-count" id="lightboxCount" style="display:none;"></span>
+      </div>
+      <div class="lightbox-info">
+        <span class="thumb-cat" id="lightboxCat">Category</span>
+        <h3 id="lightboxTitle">Project title</h3>
+        <p id="lightboxDesc">Project description.</p>
+        <div class="project-tech" id="lightboxTech" style="margin-top:12px; margin-bottom:4px; display:none;"></div>
+        <div class="project-links" style="margin-top:16px;">
+          <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank" rel="noopener noreferrer"><svg
+              width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+            </svg> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Maaz<span>.</span>Sultan</a>
+          <p>Software Developer focused on Web Development, Automation, and AI Engineering — building modern,
+            intelligent software.</p>
+        </div>
+
+        <div class="footer-nav">
+          <p class="footer-heading">Navigate</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <p class="footer-heading">Connect</p>
+          <div class="social-row">
+            <a href="https://github.com/muhammadmaazsultan0300-collab" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-maaz-sultan/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z" />
+              </svg>
+            </a>
+            <a href="mailto:maazsultan1.00@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Muhammad Maaz Sultan. All rights reserved.</span>
+        <span>Built by Muhammad Maaz Sultan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
